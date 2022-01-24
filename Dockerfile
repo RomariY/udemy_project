@@ -1,5 +1,5 @@
 FROM python:3.9-alpine
-LABEL maintainer="Roman Yaremak project"
+LABEL maintainer="Roman's project"
 
 ENV PYTHONUNBUIFFERED 1
 COPY ./requirements/base.txt /requirements/base.txt

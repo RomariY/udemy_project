@@ -1,4 +1,12 @@
 version: "3"
 
 services:
-  
+  app:
+    build:
+      context: .
+    ports:
+      - "0:7777"
+    volumes:
+      - ./app:/app
+    command: >
+      sh -c "python manage.py runserver 0:7777"
